@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border: 1px solid rgb(22, 3, 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.box{
+    border: 2px solid #0D47A1;          /* Dark Blue Border */
+    background-color: #B3E5FC;          /* Light Aqua Blue */
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #003B8E;                     /* Neon Dark Blue Text */
+    text-shadow: 0 0 8px #4FC3F7,
+                 0 0 15px #2196F3,
+                 0 0 25px #0D47A1;      /* Glow Effect for X & O */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(13,71,161,0.35);
+    transition: all 0.3s ease;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #42A5F5;
+}
+
+.btn{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 8px;                          /* Gap Between Boxes */
+    padding: 8px;
+    background-color: #0D47A1;         /* Dark Blue Gap */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(13,71,161,0.4);
+}
+
+.hide{
+    display:none;
+}
+
+.msgContainer{
+    border:1px solid rgb(6, 1, 1);
+}
